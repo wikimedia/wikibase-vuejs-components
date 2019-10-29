@@ -1,0 +1,13 @@
+@import '~wikimedia-ui-base/wikimedia-ui-base';
+
+/**
+ * Many variables are inspired, in naming and value, by the ones found in
+ * https://phabricator.wikimedia.org/diffusion/GOJU/browse/master/src/themes/wikimediaui/common.less
+ */
+
+$base-font-size-browser: 16px; // assumed browser default
+$base-font-size-desired-factor: 0.875;
+$base-font-size-desired: $base-font-size-browser * $base-font-size-desired-factor; // i.e. 14px
+
+// TODO taken from: https://gerrit.wikimedia.org/r/plugins/gitiles/wikibase/termbox/+/master/src/styles/_variables.scss
+$color-placeholder: $wmui-color-base30;

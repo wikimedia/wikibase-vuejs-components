@@ -28,4 +28,12 @@ module.exports = {
 	configureWebpack: {
 		externals: [ externals() ],
 	},
+	css: {
+		extract: false,
+		loaderOptions: {
+			sass: {
+				data: '@import "@/styles/_main.scss";',
+			},
+		},
+	},
 };
