@@ -1,5 +1,5 @@
 {
-	"name": "wikibase-vuejs-components",
+	"name": "@wmde/wikibase-vuejs-components",
 	"version": "0.1.0",
 	"description": "A library for vuejs components used in Wikibase projects. Inspired by OOUI",
 	"repository": {
