@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sample renders correctly 1`] = `
+<div
+  class="sample"
+>
+  <h1>
+    Sampel Header
+  </h1>
+</div>
+`;

@@ -6,13 +6,16 @@
 		"module": "esnext",
 		"moduleResolution": "node",
 		"experimentalDecorators": true,
-		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
 		"noImplicitReturns": true,
 		"noUnusedParameters": true,
 		"noUnusedLocals": false,
 		"declaration": true,
 		"baseUrl": ".",
+		"types": [
+			"jest",
+			"node"
+		],
 		"paths": {
 			"@/*": [
 				"src/*"
