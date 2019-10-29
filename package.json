@@ -21,7 +21,31 @@
 	"author": "The Wikidata team",
 	"license": "GPL-2.0+",
 	"scripts": {
-		"build": "echo 'test build'",
-		"test": "echo 'test test'"
+		"build": "npm-run-all build:*",
+		"build:components": "NODE_ENV=production vue-cli-service build --target lib --formats commonjs --name wikibase-vuejs-components src/index.ts",
+		"build:types": "tsc -p tsconfig.json",
+		"test": "echo 'test test'",
+		"prepublishOnly": "npm run build"
+	},
+	"main": "./dist/wikibase-vuejs-components.common.js",
+	"typings": "./dist/index.d.ts",
+	"devDependencies": {
+		"@vue/cli-plugin-babel": "^4.0.0",
+		"@vue/cli-service": "^4.0.0",
+		"babel-core": "7.0.0-bridge.0",
+		"babel-loader": "^8.0.6",
+		"babel-preset-vue": "^2.0.2",
+		"npm-run-all": "^4.1.5",
+		"typescript": "^3.5.3",
+		"vue": "^2.6.10",
+		"vue-class-component": "^6.0.0",
+		"vue-cli-plugin-typescript": "0.0.1",
+		"vue-property-decorator": "^7.0.0",
+		"vue-template-compiler": "^2.6.10"
+	},
+	"peerDependencies": {
+		"vue": "^2.6.10",
+		"vue-property-decorator": "^7.0.0",
+		"vue-class-component": "^6.0.0"
 	}
 }
