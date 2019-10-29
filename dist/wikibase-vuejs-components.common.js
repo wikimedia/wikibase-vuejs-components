@@ -1353,6 +1353,13 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 /***/ }),
 
+/***/ "541b":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "5537":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2345,6 +2352,17 @@ module.exports = function (it) {
   return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
 };
 
+
+/***/ }),
+
+/***/ "b4c6":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IndeterminateProgressBar_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("541b");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IndeterminateProgressBar_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IndeterminateProgressBar_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_index_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IndeterminateProgressBar_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -3381,11 +3399,83 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var components_ResizingTextField = (component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"5eee5069-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/IndeterminateProgressBar.vue?vue&type=template&id=36444cd6&
+var IndeterminateProgressBarvue_type_template_id_36444cd6_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
+var IndeterminateProgressBarvue_type_template_id_36444cd6_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"wb-ui-indeterminate-progress-bar__box"},[_c('div',{staticClass:"wb-ui-indeterminate-progress-bar__bar",attrs:{"aria-busy":"true","aria-live":"polite"}})])}]
+
+
+// CONCATENATED MODULE: ./src/components/IndeterminateProgressBar.vue?vue&type=template&id=36444cd6&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--14-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/ts-loader??ref--14-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/IndeterminateProgressBar.vue?vue&type=script&lang=ts&
+
+
+
+
+
+
+
+var IndeterminateProgressBarvue_type_script_lang_ts_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+      r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+      d;
+  if ((typeof Reflect === "undefined" ? "undefined" : typeof_typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+    if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  }
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var IndeterminateProgressBarvue_type_script_lang_ts_IndeterminateProgressBar =
+/*#__PURE__*/
+function (_Vue) {
+  _inherits(IndeterminateProgressBar, _Vue);
+
+  function IndeterminateProgressBar() {
+    _classCallCheck(this, IndeterminateProgressBar);
+
+    return _possibleConstructorReturn(this, getPrototypeOf_getPrototypeOf(IndeterminateProgressBar).apply(this, arguments));
+  }
+
+  return IndeterminateProgressBar;
+}(external_commonjs_vue_commonjs2_vue_amd_vue_root_vue_default.a);
+
+IndeterminateProgressBarvue_type_script_lang_ts_IndeterminateProgressBar = IndeterminateProgressBarvue_type_script_lang_ts_decorate([external_commonjs_vue_class_component_commonjs2_vue_class_component_amd_vue_class_component_root_vue_class_component_default.a], IndeterminateProgressBarvue_type_script_lang_ts_IndeterminateProgressBar);
+/* harmony default export */ var IndeterminateProgressBarvue_type_script_lang_ts_ = (IndeterminateProgressBarvue_type_script_lang_ts_IndeterminateProgressBar);
+// CONCATENATED MODULE: ./src/components/IndeterminateProgressBar.vue?vue&type=script&lang=ts&
+ /* harmony default export */ var components_IndeterminateProgressBarvue_type_script_lang_ts_ = (IndeterminateProgressBarvue_type_script_lang_ts_); 
+// EXTERNAL MODULE: ./src/components/IndeterminateProgressBar.vue?vue&type=style&index=0&lang=scss&
+var IndeterminateProgressBarvue_type_style_index_0_lang_scss_ = __webpack_require__("b4c6");
+
+// CONCATENATED MODULE: ./src/components/IndeterminateProgressBar.vue
+
+
+
+
+
+
+/* normalize component */
+
+var IndeterminateProgressBar_component = normalizeComponent(
+  components_IndeterminateProgressBarvue_type_script_lang_ts_,
+  IndeterminateProgressBarvue_type_template_id_36444cd6_render,
+  IndeterminateProgressBarvue_type_template_id_36444cd6_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var components_IndeterminateProgressBar = (IndeterminateProgressBar_component.exports);
 // CONCATENATED MODULE: ./src/index.ts
+
 
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib-no-default.js
 /* concated harmony reexport ResizingTextField */__webpack_require__.d(__webpack_exports__, "ResizingTextField", function() { return components_ResizingTextField; });
+/* concated harmony reexport IndeterminateProgressBar */__webpack_require__.d(__webpack_exports__, "IndeterminateProgressBar", function() { return components_IndeterminateProgressBar; });
 
 
 

@@ -1,2 +1,3 @@
 import ResizingTextField from './components/ResizingTextField.vue';
-export { ResizingTextField, };
+import IndeterminateProgressBar from './components/IndeterminateProgressBar.vue';
+export { ResizingTextField, IndeterminateProgressBar, };
