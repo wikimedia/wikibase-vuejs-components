@@ -1,0 +1,25 @@
+version: v4
+
+base: docker-registry.wikimedia.org/nodejs10-slim
+
+apt: {
+  packages: [
+    ca-certificates, # ability to talk to remote APIs with TLS
+  ]
+}
+
+# can't live in /srv/service as currently node_modules outside of project root is not supported
+lives:
+  in: /opt/lib
+
+variants:
+  build:
+    base: docker-registry.wikimedia.org/nodejs10-devel
+    copies: [local]
+    apt:
+      packages: [ git, build-essential, python-pkgconfig ] # needed for npm install
+    node:
+      requirements: [ package.json, package-lock.json, build/ ]
+  test:
+    includes: [ build ]
+    entrypoint: [ npm, test ]

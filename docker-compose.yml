@@ -5,7 +5,7 @@ services:
         build:
             context: ./
             dockerfile: ./Dockerfile
-        image: wmde/wikibase-vuejs-components 
+        image: wmde/wikibase-vuejs-components
         volumes:
             - '~/.npm:/.npm'
             - './:/app'
