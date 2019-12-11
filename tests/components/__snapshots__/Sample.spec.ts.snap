@@ -5,7 +5,7 @@ exports[`Sample renders correctly 1`] = `
   class="sample"
 >
   <h1>
-    Sampel Header
+    Sample Header
   </h1>
 </div>
 `;

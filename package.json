@@ -24,6 +24,7 @@
 		"build:components": "NODE_ENV=production vue-cli-service build --target lib --formats commonjs --name wikibase-vuejs-components src/index.ts",
 		"build:types": "tsc -p tsconfig.json",
 		"build": "npm-run-all build:*",
+		"doc": "build-storybook -o docs/ui",
 		"fix": "vue-cli-service lint --max-warnings 0 .",
 		"test:lint": "vue-cli-service lint --max-warnings 0 --no-fix . && stylelint --syntax scss 'src/**/*.(vue|scss)'",
 		"test:unit": "vue-cli-service test:unit -c ./jest.config.js",
