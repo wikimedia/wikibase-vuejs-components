@@ -10,8 +10,6 @@ services:
             - '~/.npm:/.npm'
             - './:/app'
         working_dir: /app
-        environment:
-            - NODE_DEBUG
 
     storybook:
         extends:
