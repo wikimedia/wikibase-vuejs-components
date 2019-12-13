@@ -1,6 +1,6 @@
 {
 	"name": "@wmde/wikibase-vuejs-components",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A library for vuejs components used in Wikibase projects. Inspired by OOUI",
 	"repository": {
 		"type": "git",
@@ -28,12 +28,15 @@
 		"fix": "vue-cli-service lint --max-warnings 0 .",
 		"test:lint": "vue-cli-service lint --max-warnings 0 --no-fix . && stylelint --syntax scss 'src/**/*.(vue|scss)'",
 		"test:unit": "vue-cli-service test:unit -c ./jest.config.js",
-		"test:distnodiff": "npm run build:components -- --dest /tmp/dist && diff -q ./dist/wikibase-vuejs-components.common.js /tmp/dist/wikibase-vuejs-components.common.js",
 		"test": "npm-run-all test:*",
 		"prepare": "node build/wikimedia-ui-base.js",
 		"prepublishOnly": "npm run build",
 		"storybook": "start-storybook"
 	},
+	"files": [
+		"src/",
+		"dist/"
+	],
 	"main": "./dist/wikibase-vuejs-components.common.js",
 	"typings": "./dist/index.d.ts",
 	"devDependencies": {
