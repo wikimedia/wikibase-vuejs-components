@@ -29,7 +29,6 @@ module.exports = {
 		externals: [ externals() ],
 	},
 	css: {
-		extract: false,
 		loaderOptions: {
 			sass: {
 				data: '@import "@/styles/_main.scss";',
