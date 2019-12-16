@@ -1,7 +1,7 @@
 {
 	"name": "@wmde/wikibase-vuejs-components",
 	"version": "0.1.1",
-	"description": "A library for vuejs components used in Wikibase projects. Inspired by OOUI",
+	"description": "A Vue.js component library used in Wikibase projects, inspired by OOUI.",
 	"repository": {
 		"type": "git",
 		"url": "git+https://gerrit.wikimedia.org/r/wikibase/vuejs-components"
