@@ -11,6 +11,6 @@ ARG UID=1000
 ARG GID=1000
 
 RUN addgroup --gid $GID runuser && adduser --uid $UID --gid $GID --disabled-password --gecos "" runuser
-RUN npm install --global npm@6.9.2
+RUN npm install --global npm@6.13.4
 
 USER runuser
