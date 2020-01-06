@@ -5,9 +5,22 @@
  * https://phabricator.wikimedia.org/diffusion/GOJU/browse/master/src/themes/wikimediaui/common.less
  */
 
+$base-spacing-unit: 8px;
 $base-font-size-browser: 16px; // assumed browser default
 $base-font-size-desired-factor: 0.875;
 $base-font-size-desired: $base-font-size-browser * $base-font-size-desired-factor; // i.e. 14px
 
 // TODO taken from: https://gerrit.wikimedia.org/r/plugins/gitiles/wikibase/termbox/+/master/src/styles/_variables.scss
 $color-placeholder: $wmui-color-base30;
+
+// Binary Input Widgets (CheckboxInput, RadioInput, ToggleSwitch)
+$size-input-binary: 1.5rem;
+$font-size-label-input-binary: 0.875rem;
+$font-size-description-input-binary: 0.75rem;
+$background-color-input-binary--active: $color-primary--active;
+$border-color-input-binary: $border-color-base--active;
+$border-color-input-binary--active: $color-primary--active;
+$border-color-input-binary--checked: $color-primary;
+$border-color-input-binary--hover: $color-primary--hover;
+$border-width-radio--checked: 7px;
+$box-shadow-input-binary--active: inset 0 0 0 1px $color-primary--active;
