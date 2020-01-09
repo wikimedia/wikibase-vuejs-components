@@ -88,12 +88,19 @@ storiesOf( 'RadioInput', module )
 	} ), { info: true } )
 	.add( 'multiple inputs', () => ( {
 		components: { RadioInput },
+		data() {
+			return {
+				picked: 'none',
+			};
+		},
 		template:
 				`
 			<div>
+				<p>Picked: {{ picked }}</p>
 				<RadioInput
 						name="input name"
 						htmlValue="input value 1"
+						v-model="picked"
 				>
 					<template slot="label">Option 1</template>
 				</RadioInput>
@@ -101,6 +108,7 @@ storiesOf( 'RadioInput', module )
 				<RadioInput
 						name="input name"
 						htmlValue="input value 2"
+						v-model="picked"
 				>
 					<template slot="label">Option 2</template>
 					<template slot="description">Some description text</template>
@@ -109,6 +117,7 @@ storiesOf( 'RadioInput', module )
 				<RadioInput
 						name="input name"
 						htmlValue="input value 3"
+						v-model="picked"
 				>
 					<template slot="label">Option 3</template>
 				</RadioInput>
@@ -117,6 +126,7 @@ storiesOf( 'RadioInput', module )
 						name="input name"
 						htmlValue="input value 4"
 						:disabled="true"
+						v-model="picked"
 				>
 					<template slot="label">Option 4 (disabled)</template>
 				</RadioInput>
