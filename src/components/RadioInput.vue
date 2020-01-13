@@ -77,11 +77,9 @@ export default class RadioInput extends Vue {
 
 		/**
 		* Ensure the invisible input takes up the required width
-		*
-		* Using min-width because otherwise the browser starts to get funny ideas
-		* if there doesn't seem to be enough horizontal space for the label
 		*/
-		min-width: $size-input-binary;
+		flex-shrink: 0;
+		width: $size-input-binary;
 		height: $size-input-binary;
 		// Having margin would offset the input from where the span is absolutely positioned,
 		// making only the overlap region receive events
