@@ -194,6 +194,7 @@ export default class RadioInput extends Vue {
 		white-space: normal;
 		padding-top: 0.1em; // minor adjustment for vertical alignment
 		color: $color-label-input-binary;
+		cursor: pointer;
 
 		.wb-ui-radio-input__main-label {
 			font-size: $font-size-label-input-binary;
@@ -208,6 +209,7 @@ export default class RadioInput extends Vue {
 
 	input[ type='radio' ]:disabled ~ label {
 		color: $color-label-input-binary--disabled;
+		cursor: default;
 	}
 }
 </style>
