@@ -40,9 +40,9 @@
 	"main": "./dist/wikibase-vuejs-components.common.js",
 	"typings": "./dist/index.d.ts",
 	"devDependencies": {
-		"@storybook/addon-a11y": "^5.2.8",
-		"@storybook/addons": "^5.2.8",
-		"@storybook/vue": "^5.2.8",
+		"@storybook/addon-a11y": "^5.3.3",
+		"@storybook/addons": "^5.3.3",
+		"@storybook/vue": "^5.3.3",
 		"@types/jest": "^23.1.4",
 		"@typescript-eslint/eslint-plugin": "^2.11.0",
 		"@typescript-eslint/parser": "^2.11.0",
