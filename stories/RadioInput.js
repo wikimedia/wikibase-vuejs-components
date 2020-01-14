@@ -14,7 +14,7 @@ storiesOf( 'RadioInput', module )
 					<template slot="label">Option 1</template>
 				</RadioInput>
 			</div>`,
-	} ), { info: true } )
+	} ) )
 	.add( 'default checked', () => ( {
 		components: { RadioInput },
 		template:
@@ -28,7 +28,7 @@ storiesOf( 'RadioInput', module )
 					<template slot="label">Option 1</template>
 				</RadioInput>
 			</div>`,
-	} ), { info: true } )
+	} ) )
 	.add( 'disabled', () => ( {
 		components: { RadioInput },
 		template:
@@ -42,7 +42,7 @@ storiesOf( 'RadioInput', module )
 					<template slot="label">Option 1</template>
 				</RadioInput>
 			</div>`,
-	} ), { info: true } )
+	} ) )
 	.add( 'disabled checked', () => ( {
 		components: { RadioInput },
 		template:
@@ -57,7 +57,7 @@ storiesOf( 'RadioInput', module )
 					<template slot="label">Option 1</template>
 				</RadioInput>
 			</div>`,
-	} ), { info: true } )
+	} ) )
 	.add( 'with description', () => ( {
 		components: { RadioInput },
 		template:
@@ -71,7 +71,7 @@ storiesOf( 'RadioInput', module )
 					<template slot="description">Some additional text</template>
 				</RadioInput>
 			</div>`,
-	} ), { info: true } )
+	} ) )
 	.add( 'with long label and description', () => ( {
 		components: { RadioInput },
 		template:
@@ -85,7 +85,7 @@ storiesOf( 'RadioInput', module )
 					<template slot="description"><strong>Donec blandit</strong> lorem vel eros ullamcorper laoreet. Pellentesque in dignissim nisl. Fusce pharetra, magna quis aliquet pellentesque, enim mi laoreet sapien, fermentum blandit magna metus sed lacus.</template>
 				</RadioInput>
 			</div>`,
-	} ), { info: true } )
+	} ) )
 	.add( 'multiple inputs', () => ( {
 		components: { RadioInput },
 		data() {
@@ -134,7 +134,7 @@ storiesOf( 'RadioInput', module )
 				<br>
 				<p><small>(vertical spacing must be handled by the client application)</small></p>
 			</div>`,
-	} ), { info: true } )
+	} ) )
 	.add( 'with links in label and description', () => ( {
 		components: { RadioInput },
 		template:
@@ -149,4 +149,4 @@ storiesOf( 'RadioInput', module )
 					</template>
 				</RadioInput>
 			</div>`,
-	} ), { info: true } );
+	} ) );
