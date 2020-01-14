@@ -2,6 +2,7 @@ import { storiesOf } from '@storybook/vue';
 import RadioInput from '@/components/RadioInput.vue';
 
 storiesOf( 'RadioInput', module )
+	.addParameters( { component: RadioInput } )
 	.add( 'default', () => ( {
 		components: { RadioInput },
 		template:

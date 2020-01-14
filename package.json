@@ -41,6 +41,7 @@
 	"typings": "./dist/index.d.ts",
 	"devDependencies": {
 		"@storybook/addon-a11y": "^5.3.3",
+		"@storybook/addon-docs": "^5.3.3",
 		"@storybook/addons": "^5.3.3",
 		"@storybook/vue": "^5.3.3",
 		"@types/jest": "^23.1.4",
