@@ -7,20 +7,20 @@ storiesOf( 'RadioInput', module )
 		components: { RadioInput },
 		template:
 				`
-			<div>
+			<form>
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
 				>
 					<template slot="label">Option 1</template>
 				</RadioInput>
-			</div>`,
+			</form>`,
 	} ) )
 	.add( 'default checked', () => ( {
 		components: { RadioInput },
 		template:
 				`
-			<div>
+			<form>
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
@@ -28,13 +28,13 @@ storiesOf( 'RadioInput', module )
 				>
 					<template slot="label">Option 1</template>
 				</RadioInput>
-			</div>`,
+			</form>`,
 	} ) )
 	.add( 'disabled', () => ( {
 		components: { RadioInput },
 		template:
 				`
-			<div>
+			<form>
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
@@ -42,13 +42,13 @@ storiesOf( 'RadioInput', module )
 				>
 					<template slot="label">Option 1</template>
 				</RadioInput>
-			</div>`,
+			</form>`,
 	} ) )
 	.add( 'disabled checked', () => ( {
 		components: { RadioInput },
 		template:
 				`
-			<div>
+			<form>
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
@@ -57,13 +57,13 @@ storiesOf( 'RadioInput', module )
 				>
 					<template slot="label">Option 1</template>
 				</RadioInput>
-			</div>`,
+			</form>`,
 	} ) )
 	.add( 'with description', () => ( {
 		components: { RadioInput },
 		template:
 				`
-			<div>
+			<form>
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
@@ -71,13 +71,13 @@ storiesOf( 'RadioInput', module )
 					<template slot="label">Option 1</template>
 					<template slot="description">Some additional text</template>
 				</RadioInput>
-			</div>`,
+			</form>`,
 	} ) )
 	.add( 'with long label and description', () => ( {
 		components: { RadioInput },
 		template:
 				`
-			<div style="max-width: 40em;">
+			<form style="max-width: 40em;">
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
@@ -85,7 +85,7 @@ storiesOf( 'RadioInput', module )
 					<template slot="label"><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Nullam eu viverra ante. Sed eget quam mi. Duis at turpis eget odio cursus tincidunt.</template>
 					<template slot="description"><strong>Donec blandit</strong> lorem vel eros ullamcorper laoreet. Pellentesque in dignissim nisl. Fusce pharetra, magna quis aliquet pellentesque, enim mi laoreet sapien, fermentum blandit magna metus sed lacus.</template>
 				</RadioInput>
-			</div>`,
+			</form>`,
 	} ) )
 	.add( 'multiple inputs', () => ( {
 		components: { RadioInput },
@@ -96,7 +96,7 @@ storiesOf( 'RadioInput', module )
 		},
 		template:
 				`
-			<div>
+			<form>
 				<p>Picked: {{ picked }}</p>
 				<RadioInput
 						name="input name"
@@ -134,13 +134,13 @@ storiesOf( 'RadioInput', module )
 
 				<br>
 				<p><small>(vertical spacing must be handled by the client application)</small></p>
-			</div>`,
+			</form>`,
 	} ) )
 	.add( 'with links in label and description', () => ( {
 		components: { RadioInput },
 		template:
 				`
-			<div>
+			<form>
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
@@ -149,5 +149,5 @@ storiesOf( 'RadioInput', module )
 					<template slot="description">Some additional text (<a href="https://example.com" target="_blank">more details</a>)
 					</template>
 				</RadioInput>
-			</div>`,
+			</form>`,
 	} ) );
