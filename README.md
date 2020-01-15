@@ -19,6 +19,9 @@ Then you can import components, e.g.
 import { IndeterminateProgressBar } from '@wmde/wikibase-vuejs-components';
 ```
 
+### Storybook
+You can see the available components and their usage examples at the [storybook on doc.wikimedia.org](https://doc.wikimedia.org/wikibase-vuejs-components/master/ui/).
+
 ## Building Docker image
 ```sh
 # ensure the node user uses your user id, so you own generated files
@@ -37,6 +40,6 @@ docker-compose run --rm node npm install
 * `docker-compose run --rm node npm run test:unit` runs all unit tests
 * `docker-compose run --rm node npm run test:lint` for linting, `docker-compose run --rm node npm run fix` for fixing auto-fixable lint errors
 
-### Storybook
+### Developing with Storybook
 There are storybook previews of all components, and new stories should be added for any newly added components. You can run the storybook as follows:
 `docker-compose up storybook`
