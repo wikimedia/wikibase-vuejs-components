@@ -7,9 +7,9 @@
 		"url": "git+https://gerrit.wikimedia.org/r/wikibase/vuejs-components"
 	},
 	"bugs": {
-		"url": "https://github.com/wmde/wikibase-vuejs-components/issues"
+		"url": "https://phabricator.wikimedia.org/project/board/4410/"
 	},
-	"homepage": "https://github.com/wmde/wikibase-vuejs-components#readme",
+	"homepage": "https://gerrit.wikimedia.org/g/wikibase/vuejs-components/",
 	"keywords": [
 		"vue",
 		"vuejs",
