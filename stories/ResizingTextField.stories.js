@@ -7,7 +7,7 @@ storiesOf( 'ResizingTextField', module )
 		docs: {
 			extractComponentDescription: () => {
 				// eslint-disable-next-line
-				return 'Please note this case shows just the plain version of the component and has to be styled by his parent.';
+				return 'Please note this case shows just the plain version of the component and has to be styled by its parent.';
 			},
 		},
 	} )
