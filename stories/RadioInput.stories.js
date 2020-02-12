@@ -150,4 +150,36 @@ storiesOf( 'RadioInput', module )
 					</template>
 				</RadioInput>
 			</form>`,
+	} ) )
+	.add( 'different sizes', () => ( {
+		components: { RadioInput },
+		template:
+				`
+			<form>
+				<div style="font-size: 1rem">
+					<p>
+						The input’s text should adjust to the size of its surroundings.
+						This one would have a normal size.
+					</p>
+					<RadioInput
+							name="input name"
+							htmlValue="input value 1"
+					>
+						<template slot="label">Option label</template>
+						<template slot="description">Additional description with more details</template>
+					</RadioInput>
+				</div>
+				<div style="font-size: 0.875rem">
+					<p>
+						This one, on the other hand, should be a bit smaller.
+					</p>
+					<RadioInput
+							name="input name"
+							htmlValue="input value 2"
+					>
+						<template slot="label">Option label</template>
+						<template slot="description">Additional description with more details</template>
+					</RadioInput>
+				</div>
+			</form>`,
 	} ) );

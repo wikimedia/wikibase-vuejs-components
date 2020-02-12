@@ -15,8 +15,8 @@ $color-placeholder: $wmui-color-base30;
 
 // Binary Input Widgets (CheckboxInput, RadioInput, ToggleSwitch)
 $size-input-binary: 1.5rem;
-$font-size-label-input-binary: 0.875rem;
-$font-size-description-input-binary: 0.75rem;
+$font-size-label-input-binary: 1em;
+$font-size-description-input-binary: ( 14 / 16 ) * $font-size-label-input-binary;
 $color-label-input-binary: $color-base;
 $color-label-input-binary--disabled: $color-base--disabled;
 $background-color-input-binary--active: $color-primary--active;
