@@ -44,3 +44,19 @@ docker-compose run --rm node npm install
 ### Developing with Storybook
 There are storybook previews of all components, and new stories should be added for any newly added components. You can run the storybook as follows:
 `docker-compose up storybook`
+
+### Release a new version
+
+1. Bump the version number in `package.json` and `package-lock.json`.
+   You can either edit both files manually,
+   or only edit `package.json` and let `npm install` update the lock file.
+2. Commit the version number change.
+   The usual commit message is “Bump version to *new version*”.
+3. Push it to Gerrit, and wait for it to be reviewed and merged.
+4. Create a new tag, named after the version number with a “v” prefix, e. g. `v1.2.3`.
+   If you feel like it, you can include a message
+   indicating the changes since the last version (`git tag -a v1.2.3`),
+   but it can also be a lightweight tag (`git tag v1.2.3`).
+5. Push the tag to GitHub.
+   This will trigger a workflow which will automatically publish the release to NPM.
+6. Push the tag to Gerrit.
