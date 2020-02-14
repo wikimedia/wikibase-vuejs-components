@@ -81,6 +81,11 @@ export default class RadioInput extends Vue {
 		flex-shrink: 0;
 		width: $size-input-binary;
 		height: $size-input-binary;
+		// Center the input relatively to the main label
+		font-size: 1em;
+		$main-label-height: $font-size-label-input-binary * $line-height-label-input-binary;
+		$top-calc: calc( #{ $main-label-height / 2 } - #{ $size-input-binary / 2 } );
+		top: $top-calc;
 		// Having margin would offset the input from where the span is absolutely positioned,
 		// making only the overlap region receive events
 		margin: 0;
@@ -93,6 +98,7 @@ export default class RadioInput extends Vue {
 			background-color: $background-color-base;
 			position: absolute;
 			left: 0;
+			top: $top-calc;
 			box-sizing: border-box;
 			width: $size-input-binary;
 			height: $size-input-binary;
@@ -198,12 +204,12 @@ export default class RadioInput extends Vue {
 
 		.wb-ui-radio-input__main-label {
 			font-size: $font-size-label-input-binary;
-			line-height: 157%;
+			line-height: $line-height-label-input-binary;
 		}
 
 		.wb-ui-radio-input__description {
 			font-size: $font-size-description-input-binary;
-			line-height: 167%;
+			line-height: $line-height-description-input-binary;
 		}
 	}
 
