@@ -1,8 +1,7 @@
 on:
-  push
-# push:
-#   tags:
-#     - '*'
+  push:
+    tags:
+      - '*'
 
 name: Verify and Publish
 jobs:
@@ -23,4 +22,4 @@ jobs:
       - name: Publish
         run: |
           printf '//registry.npmjs.org/:_authToken=%s\n' '${{ secrets.NPM_AUTH_TOKEN }}' > ~/.npmrc
-          npm publish --access public --dry-run
+          npm publish --access public
