@@ -20,7 +20,8 @@ import { IndeterminateProgressBar } from '@wmde/wikibase-vuejs-components';
 ```
 
 ### Storybook
-You can see the available components and their usage examples at the [storybook on doc.wikimedia.org](https://doc.wikimedia.org/wikibase-vuejs-components/master/ui/).
+You can see the available components and their usage examples at the [storybook on doc.wikimedia.org](https://doc.wikimedia.org/wikibase-vuejs-components/master/ui/),
+which is automatically built from the master branch.
 
 ## Building Docker image
 ```sh
