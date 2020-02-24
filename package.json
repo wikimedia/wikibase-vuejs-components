@@ -84,7 +84,7 @@
 	},
 	"peerDependencies": {
 		"vue": "^2.6.10",
-		"vue-property-decorator": "^7|^8",
-		"vue-class-component": "^6|^7"
+		"vue-property-decorator": "^7 || ^8",
+		"vue-class-component": "^6 || ^7"
 	}
 }
