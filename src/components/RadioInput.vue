@@ -198,7 +198,6 @@ export default class RadioInput extends Vue {
 		display: flex;
 		flex-direction: column;
 		white-space: normal;
-		padding-top: 0.1em; // minor adjustment for vertical alignment
 		color: $color-label-input-binary;
 		cursor: pointer;
 
