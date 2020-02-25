@@ -169,18 +169,6 @@ storiesOf( 'RadioInput', module )
 						<template slot="description">Additional description with more details</template>
 					</RadioInput>
 				</div>
-				<div style="font-size: 0.875rem">
-					<p>
-						This one, on the other hand, should be a bit smaller.
-					</p>
-					<RadioInput
-							name="input name"
-							htmlValue="input value 2"
-					>
-						<template slot="label">Option label</template>
-						<template slot="description">Additional description with more details</template>
-					</RadioInput>
-				</div>
 				<div style="font-size: 2rem">
 					<p>
 						Whereas this one should be huge by comparison.
