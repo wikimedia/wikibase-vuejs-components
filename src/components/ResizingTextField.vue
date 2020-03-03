@@ -28,8 +28,19 @@ export default class ResizingTextField extends Vue {
 	@Prop( { type: Number, default: null } )
 	public maxlength!: number;
 
+	private windowResizeHandler: ( ( this: Window, event: UIEvent ) => void ) | undefined = undefined;
+
 	public mounted(): void {
+		this.windowResizeHandler = () => this.resizeTextField();
+		window.addEventListener( 'resize', this.windowResizeHandler );
 		this.resizeTextField();
+	}
+
+	public unmounted(): void {
+		if ( this.windowResizeHandler !== undefined ) {
+			window.removeEventListener( 'resize', this.windowResizeHandler );
+			this.windowResizeHandler = undefined;
+		}
 	}
 
 	public setValue( event: InputEvent ): void {
