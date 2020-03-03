@@ -8,6 +8,7 @@
 </template>
 
 <script lang="ts">
+import debounce from 'lodash/debounce';
 import Component from 'vue-class-component';
 import Vue from 'vue';
 import { Prop } from 'vue-property-decorator';
@@ -31,7 +32,7 @@ export default class ResizingTextField extends Vue {
 	private windowResizeHandler: ( ( this: Window, event: UIEvent ) => void ) | undefined = undefined;
 
 	public mounted(): void {
-		this.windowResizeHandler = () => this.resizeTextField();
+		this.windowResizeHandler = debounce( () => this.resizeTextField(), 100 );
 		window.addEventListener( 'resize', this.windowResizeHandler );
 		this.resizeTextField();
 	}

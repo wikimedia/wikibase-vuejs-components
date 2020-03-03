@@ -45,6 +45,7 @@
 		"@storybook/addons": "^5.3.14",
 		"@storybook/vue": "^5.3.14",
 		"@types/jest": "^24.0.25",
+		"@types/lodash": "^4.14.149",
 		"@typescript-eslint/eslint-plugin": "^2.22.0",
 		"@typescript-eslint/parser": "^2.22.0",
 		"@vue/cli-plugin-babel": "^4.2.3",
@@ -86,5 +87,8 @@
 		"vue": "^2.6.10",
 		"vue-property-decorator": "^7 || ^8",
 		"vue-class-component": "^6 || ^7"
+	},
+	"dependencies": {
+		"lodash": "^4.17.15"
 	}
 }
