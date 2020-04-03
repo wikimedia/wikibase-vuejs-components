@@ -156,6 +156,15 @@ export default class RadioInput extends Vue {
 				/* stylelint-enable */
 			}
 
+			// `:focus` has to come before `:hover` so we get `:hover`’s border-color for `:focus:hover`
+			&:focus + span {
+				border-color: $border-color-input-binary--focus;
+			}
+
+			&:focus:not( :checked ) + span {
+				border-width: 2px;
+			}
+
 			&:hover + span {
 				border-color: $border-color-input-binary--hover;
 			}
