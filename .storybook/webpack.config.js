@@ -13,6 +13,9 @@ module.exports = async ( { config } ) => {
 				options: {
 					appendTsSuffixTo: [ /\.vue$/ ],
 					transpileOnly: true,
+					compilerOptions: {
+						target: 'es5',
+					},
 				},
 			},
 		],
