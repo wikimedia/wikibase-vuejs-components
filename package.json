@@ -81,7 +81,7 @@
 		"vue-cli-plugin-typescript": "0.0.1",
 		"vue-property-decorator": "^7.0.0",
 		"vue-template-compiler": "^2.6.11",
-		"wikimedia-ui-base": "^0.14.0"
+		"wikimedia-ui-base": "^0.15.0"
 	},
 	"peerDependencies": {
 		"vue": "^2.6.10",
