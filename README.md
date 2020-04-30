@@ -57,6 +57,6 @@ There are storybook previews of all components, and new stories should be added 
    If you feel like it, you can include a message
    indicating the changes since the last version (`git tag -a v1.2.3`),
    but it can also be a lightweight tag (`git tag v1.2.3`).
-5. Push the tag to GitHub.
-   This will trigger a workflow which will automatically publish the release to NPM.
-6. Push the tag to Gerrit.
+5. Push the tag to Gerrit.
+   It will be automatically mirrored to GitHub,
+   where it will trigger a workflow which will automatically publish the release to NPM.
