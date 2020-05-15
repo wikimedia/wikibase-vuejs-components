@@ -9,7 +9,7 @@
 			:id="id"
 			:checked="initiallyChecked"
 			:disabled="disabled"
-			@input="$emit('input', $event.target.value)"
+			@change="$emit('input', $event.target.value)"
 		>
 		<span />
 		<label :for="id">

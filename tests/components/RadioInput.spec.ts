@@ -59,7 +59,7 @@ describe( 'RadioInput', () => {
 		expect( wrapper.find( 'input:checked' ).exists() ).toBe( true );
 	} );
 
-	it( 'emits value as input event if there is an input element on the radio input', () => {
+	it( 'emits value as input event if there is a change event on the radio input', () => {
 		const radioInputValue = 'some value';
 		const wrapper = shallowMountWithPropsAndSlots(
 			{
@@ -67,7 +67,7 @@ describe( 'RadioInput', () => {
 			},
 		);
 		wrapper.find( 'input[type=radio]' ).element.checked = true;
-		wrapper.find( 'input[type=radio]' ).trigger( 'input' );
+		wrapper.find( 'input[type=radio]' ).trigger( 'change' );
 		expect( wrapper.emitted( 'input' ) ).toStrictEqual( [ [ radioInputValue ] ] );
 	} );
 } );
