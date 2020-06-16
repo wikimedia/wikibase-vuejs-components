@@ -28,6 +28,7 @@
 		"fix": "vue-cli-service lint --max-warnings 0 .",
 		"test:lint": "vue-cli-service lint --max-warnings 0 --no-fix . && stylelint --syntax scss 'src/**/*.(vue|scss)'",
 		"test:unit": "vue-cli-service test:unit -c ./jest.config.js",
+		"test:storybook": "CACHE_DIR=/tmp start-storybook --ci --smoke-test --quiet",
 		"test": "npm-run-all test:*",
 		"prepare": "node build/wikimedia-ui-base.js",
 		"prepublishOnly": "npm run build",
