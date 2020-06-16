@@ -6,8 +6,7 @@ storiesOf( 'RadioInput', module )
 	.add( 'default', () => ( {
 		components: { RadioInput },
 		template:
-				`
-			<form>
+			`<form>
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
@@ -19,8 +18,7 @@ storiesOf( 'RadioInput', module )
 	.add( 'default checked', () => ( {
 		components: { RadioInput },
 		template:
-				`
-			<form>
+			`<form>
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
@@ -33,8 +31,7 @@ storiesOf( 'RadioInput', module )
 	.add( 'disabled', () => ( {
 		components: { RadioInput },
 		template:
-				`
-			<form>
+			`<form>
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
@@ -47,8 +44,7 @@ storiesOf( 'RadioInput', module )
 	.add( 'disabled checked', () => ( {
 		components: { RadioInput },
 		template:
-				`
-			<form>
+			`<form>
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
@@ -62,8 +58,7 @@ storiesOf( 'RadioInput', module )
 	.add( 'with description', () => ( {
 		components: { RadioInput },
 		template:
-				`
-			<form>
+			`<form>
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
@@ -76,8 +71,7 @@ storiesOf( 'RadioInput', module )
 	.add( 'with long label and description', () => ( {
 		components: { RadioInput },
 		template:
-				`
-			<form style="max-width: 40em;">
+			`<form style="max-width: 40em;">
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
@@ -91,8 +85,7 @@ storiesOf( 'RadioInput', module )
 		components: { RadioInput },
 		data: () => ( { picked: 'none' } ),
 		template:
-				`
-			<form>
+			`<form>
 				<p>Picked: {{ picked }}</p>
 				<RadioInput
 						name="input name"
@@ -135,8 +128,7 @@ storiesOf( 'RadioInput', module )
 	.add( 'with links in label and description', () => ( {
 		components: { RadioInput },
 		template:
-				`
-			<form>
+			`<form>
 				<RadioInput
 						name="input name"
 						htmlValue="input value"
@@ -150,8 +142,7 @@ storiesOf( 'RadioInput', module )
 	.add( 'different sizes', () => ( {
 		components: { RadioInput },
 		template:
-				`
-			<form>
+			`<form>
 				<div style="font-size: 1rem">
 					<p>
 						The input’s text should adjust to the size of its surroundings.
