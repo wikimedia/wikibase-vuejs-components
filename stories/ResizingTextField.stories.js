@@ -12,21 +12,19 @@ storiesOf( 'ResizingTextField', module )
 		},
 	} )
 	.add( 'plain', () => ( {
-		data() { return { value: 'value' }; },
+		data: () => ( { value: 'value' } ),
 		components: { ResizingTextField },
 		template: '<ResizingTextField v-model="value" />',
 	} ) )
 	.add( 'full-width', () => ( {
-		data() {
-			return {
-				value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
-					'Nullam eu viverra ante. Sed eget quam mi. Duis at turpis eget odio cursus tincidunt. ' +
-					'Donec blandit lorem vel eros ullamcorper laoreet. ' +
-					'Pellentesque in dignissim nisl. ' +
-					'Fusce pharetra, magna quis aliquet pellentesque, ' +
-					'enim mi laoreet sapien, fermentum blandit magna metus sed lacus.',
-			};
-		},
+		data: () => ( {
+			value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
+				'Nullam eu viverra ante. Sed eget quam mi. Duis at turpis eget odio cursus tincidunt. ' +
+				'Donec blandit lorem vel eros ullamcorper laoreet. ' +
+				'Pellentesque in dignissim nisl. ' +
+				'Fusce pharetra, magna quis aliquet pellentesque, ' +
+				'enim mi laoreet sapien, fermentum blandit magna metus sed lacus.',
+		} ),
 		components: { ResizingTextField },
 		template: `<div>
 			<p>

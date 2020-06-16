@@ -89,11 +89,7 @@ storiesOf( 'RadioInput', module )
 	} ) )
 	.add( 'multiple inputs', () => ( {
 		components: { RadioInput },
-		data() {
-			return {
-				picked: 'none',
-			};
-		},
+		data: () => ( { picked: 'none' } ),
 		template:
 				`
 			<form>
