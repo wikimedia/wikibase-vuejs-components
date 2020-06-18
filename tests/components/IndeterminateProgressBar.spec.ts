@@ -6,9 +6,4 @@ describe( 'IndeterminateProgressBar', () => {
 		const wrapper = shallowMount( IndeterminateProgressBar );
 		expect( wrapper.element ).toMatchSnapshot();
 	} );
-
-	it( 'mounted correctly', () => {
-		const wrapper = shallowMount( IndeterminateProgressBar );
-		expect( wrapper.isVueInstance() ).toBe( true );
-	} );
 } );
